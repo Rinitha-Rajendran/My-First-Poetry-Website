@@ -1,0 +1,344 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+  .icon-bar {
+    width: 90px; /* Set a specific width */
+    background-color: #555; /* Dark-grey background */
+    font-size: 24px;
+  }
+  
+  .icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color:#ff0057; /* Add an active/current color */
+  }
+
+   /* #a{grid-area:a1;}
+        #b{grid-area:b1;}
+        #c{grid-area:c1;}
+        #d{grid-area:d1;}
+        #e{grid-area:e1;} */
+
+  .maindiv
+  {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  /*display:grid;/*
+  grid-template-areas:'a1 a1 a1 a1 a1 a1'
+                        'b1 b1 b1 c1 c1 c1'
+                        'd1 d1 d1 e1 e1 e1';*/
+  padding:20px;
+  margin:20px;
+  border-radius:20px;
+  background-color:crimson ; 
+  text-align:center;  
+  /* background-image:url("https://pixels.com/images/homepage/ourProductsPrints001.jpg") ; */
+  background-image:url("C:\Users\Rinitha Rajendran\OneDrive\Desktop\html-web dev\childhood.jpg");
+  background-size: cover;
+  box-shadow:2px 20px 20px black;
+  }
+  div{
+  /*flex box or column*/
+    padding:20px;
+    margin:20px;
+    /*top-left and bottomright*/
+  border-radius:120px 5%;
+  background-color:black; 
+  text-align:center; 
+  color:white; 
+  font-size:33px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }   
+  h2
+  {
+  color:darkblue;
+  font-size:20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  } 
+  .search-button {
+  background-color:rgb(227, 26, 59); /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  display: inline-block;
+} 
+.search-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #4CAF50;
+}   
+
+/* form {
+  display: flex;
+  align-items: center;
+} */
+
+input[type="text"] {
+  width: 1000px;  /* Adjust the width as needed */
+  padding: 10px;
+  font-size: 16px;
+}
+
+.content.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+  overflow: hidden; /* To hide content before it is fully loaded */
+}
+
+
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+   /*should be the same height as the images*/
+  margin-bottom: 20px;
+  margin: auto;
+  background-color: transparent; /* Set background color to transparent or remove the property */
+}
+
+.img-comp-container1 {
+  position: relative;
+   /*should be the same height as the images*/
+  margin-bottom: 20px;
+  margin: auto;
+  background-color: transparent; /* Set background color to transparent or remove the property */
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+      
+/* Example: Set overflow to auto for an element */
+.overflowing-element {
+  overflow: auto;
+}
+ 
+/* Set height to auto for body and html */
+body, html {
+  height: auto;
+}
+
+/* Set height to auto for body and html */
+body, html {
+  height: auto;
+}
+
+.comparison{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 40px;
+} 
+  
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.container1{
+  display: flex;
+  align-items: flex-start; /* Align items to the start (top) */
+}
+
+.heading{
+  align-items:center;
+  font-size: 65px;
+}
+
+
+h2{
+  color: white;
+}
+
+
+/* .img-comp-container {
+  position: relative;
+  width: 500px; /* Adjust width as per your image size */
+  /* height: 200px;  */
+  /* Adjust height as per your image size */
+/* } */ */
+
+.img-comp-img {
+  position: relative;
+  width: 100%;
+}
+
+.img-text-overlay {
+  position: absolute;
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust background color and opacity */
+  padding: 10px;
+  font-size: 18px; /* Adjust font size */
+  text-align: center;
+}
+
+
+.img-comp-container {
+  position: relative;
+  width: 500px; /* Adjust width as per your image size */
+  height: 500px; /* Adjust height as per your image size */
+  overflow: hidden; /* Ensure overflow is hidden to clip the moving image */
+}
+
+.img-comp-img {
+  position: absolute;
+  animation: moveImage 10s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes moveImage {
+  0% {
+      left: -100%; /* Start position off the container */
+  }
+  100% {
+      left: 100%; /* End position outside the container */
+  }
+}
+
+.img-text-overlay {
+  position: absolute;
+  bottom: 10px; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust background color and opacity */
+  padding: 10px;
+  font-size: 18px; /* Adjust font size */
+  text-align: center;
+  width: 100%;
+}
+

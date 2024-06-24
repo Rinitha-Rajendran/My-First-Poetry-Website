@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card hover effects</title>
+    <link rel="stylesheet" href="css/animation.css"
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="showContent(this)">
+            <div class="face face1">
+            <div class="content">
+                <img src="images/mybookcover.jpg" alt=""/>
+                <h3>Poem 1 </h3>
+            </div>
+            </div>
+
+
+            <div class="face face2">
+            <div class="content">
+                <p>BROKEN BOND AND
+                    BEYOND!</p>
+                <a href="poem1.html">Read Poem1</a>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+            <div class="content">
+                <img src="images/mybookcover.jpg" alt="" width="200px " height="100px"/>
+                <h3>Poem 2 </h3>
+            </div>
+            </div>
+
+
+            <div class="face face2">
+            <div class="content">
+                <p>REACHABLE AND RELIABLE!</p>
+                <a href="poem2.html">Read Poem2</a>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+            <div class="content">
+                <img src="images/mybookcover.jpg" alt="" width="200px " height="100px"/>
+                <h3>Motivational Mantra 3 </h3>
+            </div>
+            </div>
+
+
+            <div class="face face2">
+            <div class="content">
+                <p>ADVICE MAKES YOU WISE!</p>
+                <!-- <a href="poem1.html">Read More</a> -->
+                <a href="#" onclick="showPoem('poem3.html')">View Quote</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="poemModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="poemContent"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
